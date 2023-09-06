@@ -1,6 +1,6 @@
 # Type Writer Game
 
-![Type Writer Game Screenshot](Screenshot.png)
+![Type Writer Game Screenshot](screenshot.png)
 
 Play the Type Writer Game and improve your typing skills! Choose your preferred difficulty level and start typing to test your speed and accuracy.
 
