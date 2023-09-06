@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   cursor: default;
 }
 
@@ -73,7 +74,7 @@ body {
 
 .input {
   margin: 15px 0;
-  width: 96%;
+  width: 100%;
   display: block;
   padding: 15px;
   border: 3px solid rgb(0, 0, 0);
