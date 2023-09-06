@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.name {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span {
+  font-weight: bold;
+  color: rgb(90, 0, 181);
+}
+.message span::before {
+  content: "[ ";
+}
+.message span::after {
+  content: " ]";
+}
+.message span select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.start {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgb(90, 0, 181);
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.the-word {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(90, 0, 181);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.input {
+  margin: 15px 0;
+  width: 96%;
+  display: block;
+  padding: 15px;
+  border: 3px solid rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 6px;
+  caret-color: rgb(0, 0, 0);
+}
+.input:focus {
+  outline: none;
+}
+
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.upcoming-words div {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+  margin: 4px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+.control span {
+  font-weight: bold;
+  color: rgb(90, 0, 181);
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .good {
+  color: green;
+}
+.finish .bad {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

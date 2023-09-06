@@ -1,0 +1,148 @@
+$main-color: rgb(0, 0, 0);
+$second-color: rgb(90, 0, 181);
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+.name {
+  background-color: $main-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font: {
+    weight: bold;
+    size: 25px;
+  }
+}
+
+.message {
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  text-align: center;
+
+  span {
+    font-weight: bold;
+    color: $second-color;
+
+    &::before {
+      content: "[ ";
+    }
+
+    &::after {
+      content: " ]";
+    }
+    select {
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+  }
+}
+
+.start {
+  font: {
+    weight: bold;
+    size: 20px;
+  }
+  text-align: center;
+  background-color: $second-color;
+  color: white;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.the-word {
+  text-align: center;
+  font: {
+    weight: bold;
+    size: 60px;
+  }
+  color: $second-color;
+  user-select: none;
+}
+
+.input {
+  margin: 15px 0;
+  width: 96%;
+  display: block;
+  padding: 15px;
+  border: 3px solid $main-color;
+  font-size: 20px;
+  text: {
+    align: center;
+    transform: capitalize;
+  }
+  border-radius: 6px;
+  caret-color: $main-color;
+  &:focus {
+    outline: none;
+  }
+}
+
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  div {
+    background-color: $main-color;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+  }
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+
+  span {
+    font-weight: bold;
+    color: $second-color;
+  }
+}
+
+.finish {
+  font: {
+    weight: bold;
+    size: 40px;
+  }
+  text-align: center;
+  padding: 15px;
+}
+
+.finish {
+  .good {
+    color: green;
+  }
+
+  .bad {
+    color: red;
+  }
+}
